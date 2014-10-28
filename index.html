@@ -1,0 +1,50 @@
+<!-- 
+    Dalton James, Dalton_James@student.uml.edu
+    and
+    Kyle White, Kyle_White@student.uml.edu
+
+    File: index.html
+    Created: 28 Oct 2014
+    
+    Page using form to check a user input
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='UTF-8'>
+    <title>In Class Quiz</title>
+    
+    <!--links the css file-->
+    <link href="css/InClassStyle.css" rel="stylesheet" type="text/css">
+    
+    <!--links for the jquery-->
+    <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="InClassQuiz.js"></script>
+  
+  </head>
+  
+  
+  <body>
+    
+    <!-- #body-wrapper includes all of the text that will be displayed on the page-->
+    <div id="body-wrapper">
+      
+      <!--form for taking user input -->
+      <form id="m-form" action="javascript:void(0)">
+        <label>Please enter "Comments are more important than programming"</label>
+        <input type="text" id="m-input" tabindex="1"/>
+        <input type="submit" value="Check Input" tabindex="2"/>
+      </form>
+      
+      <!--messages set to hide so they are only displayed after user input-->
+      <!--wrapped in a div for easier targeting (would be used more for bigger pages -->
+      <div id="p-wrapper">
+        <p id="pass" class="hide">You have entered the correct value</p>
+        <p id="fail" class="hide">You have entered an incorrect value</p>
+      </div><!--end p-wrapper div-->
+
+    </div><!--end body-wrapper div-->
+
+  </body>
+</html>
